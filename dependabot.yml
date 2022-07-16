@@ -1,0 +1,16 @@
+version: 2
+registries:
+  python-gitlab:
+    type: python-index
+    url: https://gitlab.com/api/v4/projects/32058529/packages/pypi/simple
+    username: dependabot
+    password: ${{secrets.PYPI_PASSWORD}}
+    replaces-base: true
+updates:
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: daily
+    insecure-external-code-execution: allow
+    registries:
+      - python-gitlab

@@ -1,0 +1,34 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "399f47a78152a839047d79b89f3d83f19c49699433ced14c05bea985c37379cc"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.8"
+        },
+        "sources": [
+            {
+                "name": "gitlab",
+                "url": "https://${PYPI_AUTH}@gitlab.com/api/v4/projects/32058529/packages/pypi/simple",
+                "verify_ssl": true
+            },
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "dependabottestpackage": {
+            "hashes": [
+                "sha256:019ef4870d9ccbae1c74bcc9aceacc5c40c38059d10a3141d8b07d24db899933",
+                "sha256:35062e6c1f4800710efa773f04f2fc2625cf0cc3299f7219dd5c45c26a85b921"
+            ],
+            "index": "gitlab",
+            "version": "==0.0.2"
+        }
+    },
+    "develop": {}
+}
